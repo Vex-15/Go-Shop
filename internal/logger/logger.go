@@ -15,5 +15,4 @@ func New() zeroLog.Logger {
 		log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stdout, TimeFormat: time.RFC3339})
 	}
 	return log.Logger
-
 }
